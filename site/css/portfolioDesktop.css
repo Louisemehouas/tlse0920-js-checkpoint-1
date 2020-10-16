@@ -1,0 +1,6 @@
+@media only screen and (widthmax: 700px){
+    .navbar{
+        justify-content: space-between;
+    }
+
+}
