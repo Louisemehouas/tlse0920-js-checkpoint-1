@@ -14,9 +14,20 @@ Au final la liste devra ressembler à :
 26-99
 26-100
 */
+let seatNumber = [];
+let newArr = [];
 
 function theaterSieges() {
+  for(y in arr){
+    newArr = []
+      for(x in arr[y]){
+        newArr.push(y+'-'+x)
+    }
+        seatNumber.push(newArr)
+  }
   // Your code here !
+  return seatNumber;
 }
+
 
 console.log(theaterSieges());
