@@ -17,6 +17,17 @@ Au final la liste devra ressembler à :
 
 function theaterSieges() {
   // Your code here !
+  const col = 26;
+  const seats = 100;
+  let seatList = []
+  for(let i=1; i<=col; i++){
+    let subList = [];
+    for(let j = 1; j<=seats; j++){
+      seatList.push(`${i} - ${j}`);
+    }
+  }
+  // console.log(seatList);
+  return seatList;
 }
 
 console.log(theaterSieges());
