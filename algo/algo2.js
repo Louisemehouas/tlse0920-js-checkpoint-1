@@ -10,7 +10,14 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 */
 
 function isLeapYear(year) {
+  const bissextile = year;
+  if (bissextile%400 == 0 || (bissextile%4 == 0 && bissextile%100 != 0)){
+    return true
+  }else{
+    return false
+  }
   // TODO: Your code here
+  return bissextile
 }
 
 console.log("1900: ",isLeapYear(1900)); // should be false
