@@ -1,3 +1,42 @@
+/* Screen greater than 700px */
+@media screen and (min-width: 700px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .column {
+    align-content: center;
+    margin:auto;
+    height: 500px;
+  }
+
+  .skills {
+    display:flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop-img {
+    display:none;
+  }
+}
+
+
+/* Define navbar & introduction FLEX */
+.navbar .introduction .column .skills{
+  display: flex; 
+} 
+
 .pink-bg {
   background-color: pink;
 }
@@ -34,6 +73,8 @@
 }
 
 .column {
+  height: 350px;
+  width: 380px;
   border-left: 1px solid #e6ecf8;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
