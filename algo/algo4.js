@@ -20,6 +20,30 @@ const persons = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
-function findAdults(arr) {
-  // Your code here !
+let finalTab = [[],[]];
+let menAdults = [];
+let womanAdults = [];
+
+function findAdults(persons) {
+  for (let i = 0 ; i < persons.length; i++) {
+    if (persons[i].sex === "female" && persons[i].age > 18) {
+      womanAdults.push(persons[i])
+    } else if (persons[i].sex === "male" && persons[i].age > 18) {
+      menAdults.push(persons[i])
+    } else {
+      console.log("It's to young")
+    }
+  }
+  finalTab.splice(0, 0, womanAdults);
+  finalTab.splice(1, 0, menAdults);
 }
+
+findAdults(persons);
+console.log("tab woman inside finalTab = " +finalTab[0])
+console.log("tab men inside finalTab = " +finalTab[1])
+// can test content of tab in tab with :
+// console.log("tab woman inside finalTab = " +finalTab[0][0].name)
+// it's first name of man with + 18 years old if first tab, and
+// console.log("tab woman inside finalTab = " +finalTab[0][1].name)
+// it's first name of woman with + 18 years old if first tab
+console.log("--- END ---")
