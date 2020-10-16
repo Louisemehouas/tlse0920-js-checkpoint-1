@@ -21,5 +21,19 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  const arr1 =[]
+  const arr2 =[]
+  for ( let i=0; i<arr.lenght; i++){
+    if (arr[i].age>=18 && arr[i].sex==='female'){
+      arr1.push(arr[i])
+    }
+  }
+  for (let i= 0; i<arr.lenght; i++){
+    if (arr[i].age>18 && arr[i].sex==='male'){
+      arr2.push(arr[i])
+    }    
+  }
+  return [arr1, arr2]
 }
+
+console.log(findAdults(persons))
