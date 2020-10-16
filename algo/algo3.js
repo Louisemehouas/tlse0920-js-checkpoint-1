@@ -16,7 +16,15 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+  const theaterSieges= () => {
+    let result = []
+    for (let i = 1; i < 27; i++){
+      for (let j = 1; j <101; j++){
+        result.push(i + '-' +j);
+      }
+    }
+    return result;
+  };
 }
 
 console.log(theaterSieges());
