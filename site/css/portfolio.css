@@ -3,11 +3,21 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .introduction {
     display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
