@@ -15,8 +15,19 @@ Au final la liste devra ressembler à :
 26-100
 */
 
+let columnNbr = 26;
+let seatNbr = 100;
+let list = [];
+
 function theaterSieges() {
-  // Your code here !
+  // colonne
+  for (indexColumn = 1; indexColumn <= columnNbr; indexColumn++) {
+    // siège
+    for (indexSeat = 1; indexSeat <= seatNbr; indexSeat++) {
+      list.push( +[indexColumn]+ "-" +[indexSeat]);
+    }
+  }
+  return list
 }
 
 console.log(theaterSieges());
