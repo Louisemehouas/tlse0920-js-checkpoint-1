@@ -31,6 +31,9 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .column {
@@ -79,4 +82,30 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+.banner {
+  margin: auto;
+  text-align: center;
+}
+
+.disabled{
+  opacity: 0.3;
+}
+
+.projects{
+  text-align: center;
+}
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
