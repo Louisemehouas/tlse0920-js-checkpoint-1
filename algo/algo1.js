@@ -7,7 +7,9 @@ thirdAngle(20, 80) doit renvoyer 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  const d = 180;
+  const c = d - (a+b);
+  return c;
 }
 
 console.log(thirdAngle(90, 30));
