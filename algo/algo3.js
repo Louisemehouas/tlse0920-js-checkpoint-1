@@ -16,7 +16,14 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let a = 1;
+  while (a <= 26) {
+    for (let b = 1; b <= 100; b++) {
+      let c = a + "-" + b;
+      console.log(c);
+    }
+    a++;
+  }
 }
 
 console.log(theaterSieges());
